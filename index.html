@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 배포 주소: https://psyops42-art.github.io/pension_info/ (저장소 이름이 바뀌면 아래 두 줄도 함께 수정) -->
+<link rel="canonical" href="https://psyops42-art.github.io/pension_info/">
+<meta property="og:url" content="https://psyops42-art.github.io/pension_info/">
+
+<title>은퇴참견 EP4 · 적립기 투자 편</title>
+<meta name="description" content="박곰희·김성일 작가와 함께하는 은퇴참견 EP4 적립기투자 편. 본편과 숏츠 4편을 한 화면에서 보실 수 있습니다.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="교보생명 퇴직연금">
+<meta property="og:title" content="은퇴참견 EP4 · 적립기 투자 편">
+<meta property="og:description" content="분산투자·장기투자·리밸런싱부터 목표 수익률까지. 본편 30분과 숏츠 4편을 한 화면에서.">
+<meta property="og:image" content="https://i.ytimg.com/vi/NdNuP3ZK1Vg/maxresdefault.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{
+    --deep:#171B21; --panel:#232830; --line:#343A44;
+    --accent:#0F9D58; --paper:#E8EBEF; --muted:#98A1AE; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--deep);color:var(--paper);line-height:1.5;
+    font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 56px}
+
+  .series{display:flex;align-items:baseline;gap:10px;font-size:13px;color:var(--muted)}
+  .series b{color:var(--accent);font-weight:600}
+  h1{margin:10px 0 0;font-size:clamp(28px,7vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.15}
+  h1 span{display:block;color:var(--accent)}
+  .lead{margin:14px 0 0;max-width:44ch;font-size:15px;color:var(--muted)}
+  .meta{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);
+        display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted)}
+  .meta b{color:var(--paper);font-weight:600}
+
+  /* 본편 */
+  .full{margin-top:26px;display:block;text-decoration:none;color:inherit;
+        background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  @media(min-width:760px){.full{display:grid;grid-template-columns:1.35fr 1fr;align-items:stretch}}
+  .full .shot{position:relative;aspect-ratio:16/9;background:#14181E}
+  .full .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .full .shot::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(20,24,30,.7),rgba(20,24,30,0) 55%)}
+  .full .txt{padding:20px 22px 22px;display:flex;flex-direction:column;justify-content:center;gap:9px}
+  .kicker{font-size:12.5px;font-weight:700;color:var(--accent)}
+  .full h2{margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em;line-height:1.35}
+  .full p{margin:0;font-size:13.5px;color:var(--muted)}
+  .full:hover .play,.full:focus-visible .play{transform:scale(1.09);background:var(--accent)}
+  .full:hover .play svg path,.full:focus-visible .play svg path{fill:#171B21}
+
+  .sub{margin:34px 0 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+       border-top:1px solid var(--line);padding-top:20px}
+  .sub h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.02em}
+  .sub span{font-size:13px;color:var(--muted)}
+
+  .grid{margin-top:16px;display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+  @media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:18px}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+        overflow:hidden;display:flex;flex-direction:column}
+  .thumb{position:relative;display:block;aspect-ratio:9/16;background:#14181E;text-decoration:none}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .thumb::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(20,24,30,.85),rgba(20,24,30,0) 45%)}
+  .ep{position:absolute;top:10px;left:10px;z-index:2;background:var(--accent);color:#171B21;
+      font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+  .play{position:absolute;z-index:2;left:50%;top:50%;width:52px;height:52px;margin:-26px 0 0 -26px;
+        border-radius:50%;background:rgba(20,24,30,.62);border:1.5px solid rgba(255,255,255,.75);
+        display:grid;place-items:center;transition:transform .18s ease,background .18s ease}
+  .play svg{margin-left:3px}
+  .thumb:hover .play,.thumb:focus-visible .play{transform:scale(1.09);background:var(--accent)}
+  .thumb:hover .play svg path,.thumb:focus-visible .play svg path{fill:#171B21}
+  .body{padding:12px 13px 13px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .title{margin:0;font-size:15px;font-weight:600;letter-spacing:-.02em;line-height:1.38}
+  .title a{color:inherit;text-decoration:none}
+  .title a:hover{text-decoration:underline;text-underline-offset:3px}
+  .copy{margin-top:auto;background:transparent;color:var(--muted);border:1px solid var(--line);
+        border-radius:8px;padding:7px 0;width:100%;font-family:inherit;font-size:12.5px;cursor:pointer;
+        transition:color .15s,border-color .15s}
+  .copy:hover{color:var(--accent);border-color:var(--accent)}
+  .copy.done{color:#171B21;background:var(--accent);border-color:var(--accent)}
+
+  .channel{margin-top:20px;display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+           padding:15px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+           transition:border-color .15s}
+  .channel:hover{border-color:var(--accent)}
+  .channel .yt{flex:0 0 auto;width:38px;height:27px;border-radius:7px;background:var(--accent);
+               display:grid;place-items:center}
+  .channel .yt svg{margin-left:2px}
+  .channel .t{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .channel .t strong{font-size:14.5px;font-weight:700;letter-spacing:-.02em}
+  .channel .t span{font-size:12.5px;color:var(--muted)}
+  .channel .go{margin-left:auto;flex:0 0 auto;font-size:13px;color:var(--accent);font-weight:600}
+
+  .share{margin-top:26px;padding:18px;border:1px solid var(--line);border-radius:var(--radius);
+         display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .share p{margin:0;font-size:13.5px;color:var(--muted);max-width:42ch}
+  .btns{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{background:var(--accent);color:#171B21;border:0;border-radius:9px;padding:11px 18px;
+       font-family:inherit;font-size:14px;font-weight:700;cursor:pointer}
+  .btn.ghost{background:transparent;color:var(--paper);border:1px solid var(--line)}
+  .btn.done{background:var(--paper)}
+  footer{margin-top:22px;font-size:12px;color:#79828F}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="series"><b>은퇴참견</b><span>박곰희 · 김성일 작가와 함께</span></div>
+  <h1>EP4<span>적립기투자 편</span></h1>
+  <p class="lead">퇴직연금을 DB형에서 DC형으로 바꾼 뒤 직접 운용을 고민하는 50대 직장인의 사례로, 분산투자·장기투자·리밸런싱부터 목표 수익률까지 짚었습니다.</p>
+  <div class="meta">
+    <span>본편 <b>30분</b> · 숏츠 <b>4편</b></span>
+    <span>숏츠는 편당 <b>1분 내외</b></span>
+    <span>출퇴근길에 하나씩 보기 좋습니다</span>
+  </div>
+
+  <a class="full" id="full" href="#" target="_blank" rel="noopener">
+    <div class="shot">
+      <img id="fullImg" src="" alt="">
+      <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M0 0l16 9-16 9z" fill="#fff"/></svg></span>
+    </div>
+    <div class="txt">
+      <div class="kicker">본편 보기</div>
+      <h2 id="fullTitle"></h2>
+      <p>박곰희·김성일 전문가와 함께 풀어본 전체 대화, 30분.</p>
+    </div>
+  </a>
+
+  <div class="sub">
+    <h3>핵심만 뽑은 숏츠</h3>
+    <span>4편 · 순서대로 보셔도 좋습니다</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <a class="channel" href="https://www.youtube.com/@kyoboPension" target="_blank" rel="noopener">
+    <span class="yt"><svg width="11" height="13" viewBox="0 0 11 13" aria-hidden="true"><path d="M0 0l11 6.5L0 13z" fill="#171B21"/></svg></span>
+    <span class="t">
+      <strong>교보생명 퇴직연금 유튜브</strong>
+      <span>지난 회차와 연금 콘텐츠를 모두 보실 수 있습니다</span>
+    </span>
+    <span class="go">더 많은 영상 보기</span>
+  </a>
+
+  <div class="share">
+    <p>카카오톡에 그대로 붙여 넣을 안내 문구와 링크를 한 번에 복사합니다.</p>
+    <div class="btns">
+      <button class="btn ghost" id="copyPage">이 페이지 주소 복사</button>
+      <button class="btn" id="copyAll">카톡 공유 문구 복사</button>
+    </div>
+  </div>
+
+  <footer>교보생명 퇴직연금 · 은퇴참견 시리즈 · <a href="https://www.youtube.com/@kyoboPension" target="_blank" rel="noopener" style="color:#98A1AE">@kyoboPension</a></footer>
+</div>
+
+<script>
+/* ───── 제목만 여기서 수정하시면 화면과 공유 문구에 모두 반영됩니다 ───── */
+const FULL = { id:"NdNuP3ZK1Vg", title:"은퇴자산, 이제는 투자해야 할까요?" };
+const EPISODES = [
+  { n:1, id:"WaocIi2JWME", title:"전문가가 추천하는 현실적인 목표 수익률?" },
+  { n:2, id:"mmOqlNCupjg", title:"50대 투자 초보라면 딱 3가지만 기억하세요" },
+  { n:3, id:"FW9n6pqA748", title:"어떤 시장에서도 버티는 포트폴리오는?" },
+  { n:4, id:"q2YFUmj3gFA", title:"2억 넘는 퇴직금, 한 번에 투자할까?" }
+];
+/* ──────────────────────────────────────────────────────────── */
+
+const shorts = id => `https://youtube.com/shorts/${id}`;
+const watch  = id => `https://youtu.be/${id}`;
+
+const fullEl = document.getElementById("full");
+fullEl.href = watch(FULL.id);
+fullEl.setAttribute("aria-label", FULL.title + " 본편 보기");
+document.getElementById("fullTitle").textContent = FULL.title;
+const fullImg = document.getElementById("fullImg");
+fullImg.src = `https://i.ytimg.com/vi/${FULL.id}/maxresdefault.jpg`;
+fullImg.onerror = function(){ this.onerror=null; this.src=`https://i.ytimg.com/vi/${FULL.id}/hqdefault.jpg`; };
+
+document.getElementById("grid").innerHTML = EPISODES.map(e => `
+  <article class="card">
+    <a class="thumb" href="${shorts(e.id)}" target="_blank" rel="noopener" aria-label="EP.${e.n} ${e.title} 영상 보기">
+      <span class="ep">EP.${e.n}</span>
+      <img src="https://i.ytimg.com/vi/${e.id}/oardefault.jpg"
+           onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${e.id}/hqdefault.jpg'"
+           alt="" loading="lazy">
+      <span class="play"><svg width="16" height="18" viewBox="0 0 16 18"><path d="M0 0l16 9-16 9z" fill="#fff"/></svg></span>
+    </a>
+    <div class="body">
+      <h4 class="title"><a href="${shorts(e.id)}" target="_blank" rel="noopener">${e.title}</a></h4>
+      <button class="copy" data-link="${shorts(e.id)}">링크 복사</button>
+    </div>
+  </article>`).join("");
+
+function flash(btn, text){
+  const original = btn.textContent;
+  btn.textContent = text; btn.classList.add("done");
+  setTimeout(() => { btn.textContent = original; btn.classList.remove("done"); }, 1600);
+}
+async function copy(text, btn, okText){
+  try { await navigator.clipboard.writeText(text); }
+  catch(err){
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); ta.remove();
+  }
+  flash(btn, okText);
+}
+
+document.querySelectorAll(".copy").forEach(btn =>
+  btn.addEventListener("click", () => copy(btn.dataset.link, btn, "복사됨")));
+
+document.getElementById("copyPage").addEventListener("click", e =>
+  copy(location.href, e.currentTarget, "복사됨"));
+
+document.getElementById("copyAll").addEventListener("click", e => {
+  const text =
+`안녕하세요.
+열심히 모으기만 하면 되는 줄 알았던 은퇴자산, 이제는 어떻게 투자하고 관리해야 할까요?
+
+박곰희, 김성일 작가와 은퇴에 대한 고민을 풀어보는 '은퇴참견 EP4. 적립기투자 편'을 공유드립니다.
+본편과 숏츠를 한 화면에서 편하게 보실 수 있습니다.
+
+▶ 모아보기
+${location.href}
+
+▶ 본편
+${watch(FULL.id)}
+
+` + EPISODES.map(ep => `EP.${ep.n} ${ep.title}\n${shorts(ep.id)}`).join("\n\n") +
+`
+
+짧지만 알찬 영상! 출퇴근길에 하나씩 감상해 보시기 바랍니다.
+
+▶ 지난 회차 더 보기 (교보생명 퇴직연금 유튜브)
+https://www.youtube.com/@kyoboPension`;
+  copy(text, e.currentTarget, "복사됨");
+});
+</script>
+</body>
+</html>
