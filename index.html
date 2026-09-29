@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root{
-    --bg:#FFFFFF; --soft:#F4F6F8; --line:#E3E7EC;
+    --bg:#F1F3F5; --card:#FFFFFF; --soft:#E9ECEF; --line:#DFE3E8; --navy:#0B3C7A;
     --ink:#1B1F26; --muted:#6B7480; --accent:#0F9D58; --radius:14px;
   }
   *{box-sizing:border-box}
@@ -34,6 +34,23 @@
   .wrap{max-width:1040px;margin:0 auto;padding:0 20px 56px}
   a{color:inherit}
 
+
+  /* 채널 배너 */
+  .banner{display:block;margin:16px 0 0;border-radius:var(--radius);overflow:hidden;
+          border:1px solid var(--line);text-decoration:none;background:var(--card)}
+  .banner img{width:100%;display:block}
+  .banner .fb{display:none}
+  .banner.no-img .fb{display:flex;align-items:center;gap:14px;padding:20px 22px;
+          background:linear-gradient(105deg,#E3EEFA 0%,#EFF5FC 55%,#E8F3EC 100%)}
+  .banner .mark{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:#fff;
+          display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--navy);
+          letter-spacing:-.04em;border:1px solid rgba(11,60,122,.12)}
+  .banner .bt{display:flex;flex-direction:column;gap:2px}
+  .banner .bt strong{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+  .banner .bt span{font-size:12.5px;color:#5A7594}
+  .banner .sub{margin-left:auto;font-size:12.5px;font-weight:700;color:var(--accent);white-space:nowrap}
+  @media(max-width:520px){.banner .sub{display:none}}
+
   /* 헤더 */
   header{padding:30px 0 0}
   .label{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.01em}
@@ -43,13 +60,13 @@
   .stat b{color:var(--ink);font-weight:700}
 
   /* 회차 이동 칩 */
-  .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);
+  .nav{position:sticky;top:0;z-index:20;background:rgba(241,243,245,.92);
        backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line);margin-top:22px}
   .nav-in{max-width:1040px;margin:0 auto;padding:10px 20px;display:flex;gap:8px;overflow-x:auto;
           scrollbar-width:none}
   .nav-in::-webkit-scrollbar{display:none}
   .chip{flex:0 0 auto;text-decoration:none;font-size:13px;font-weight:600;color:var(--muted);
-        border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:#fff;
+        border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:var(--card);
         transition:color .15s,border-color .15s}
   .chip:hover,.chip.on{color:var(--accent);border-color:var(--accent)}
 
@@ -63,7 +80,7 @@
 
   /* 본편 */
   .full{margin-top:14px;display:block;text-decoration:none;border:1px solid var(--line);
-        border-radius:var(--radius);overflow:hidden;background:#fff;transition:border-color .15s,box-shadow .15s}
+        border-radius:var(--radius);overflow:hidden;background:var(--card);transition:border-color .15s,box-shadow .15s}
   .full:hover{border-color:var(--accent);box-shadow:0 6px 20px rgba(27,31,38,.07)}
   @media(min-width:760px){.full{display:grid;grid-template-columns:1.3fr 1fr}}
   .shot{position:relative;aspect-ratio:16/9;background:var(--soft)}
@@ -82,7 +99,7 @@
   /* 숏츠 */
   .grid{margin-top:12px;display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
   @media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:16px}}
-  .card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+  .card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);
         display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s}
   .card:hover{border-color:var(--accent);box-shadow:0 6px 20px rgba(27,31,38,.07)}
   .thumb{position:relative;display:block;aspect-ratio:9/16;background:var(--soft);text-decoration:none}
@@ -93,7 +110,7 @@
   .title{margin:0;font-size:14px;font-weight:600;letter-spacing:-.02em;line-height:1.4}
   .title a{text-decoration:none}
   .title a:hover{text-decoration:underline;text-underline-offset:3px}
-  .copy{margin-top:auto;background:#fff;color:var(--muted);border:1px solid var(--line);
+  .copy{margin-top:auto;background:var(--card);color:var(--muted);border:1px solid var(--line);
         border-radius:8px;padding:6px 0;width:100%;font-family:inherit;font-size:12px;cursor:pointer;
         transition:color .15s,border-color .15s}
   .copy:hover{color:var(--accent);border-color:var(--accent)}
@@ -105,7 +122,7 @@
 
   /* 채널 / 공유 */
   .channel{margin-top:34px;display:flex;align-items:center;gap:13px;text-decoration:none;
-           padding:15px 18px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+           padding:15px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
            transition:border-color .15s}
   .channel:hover{border-color:var(--accent)}
   .channel .yt{flex:0 0 auto;width:38px;height:27px;border-radius:7px;background:var(--accent);
@@ -115,7 +132,7 @@
   .channel .t span{font-size:12.5px;color:var(--muted)}
   .channel .go{margin-left:auto;flex:0 0 auto;font-size:13px;color:var(--accent);font-weight:700}
   .share{margin-top:12px;padding:17px 18px;border:1px solid var(--line);border-radius:var(--radius);
-         display:flex;flex-wrap:wrap;align-items:center;gap:13px;justify-content:space-between;background:var(--soft)}
+         display:flex;flex-wrap:wrap;align-items:center;gap:13px;justify-content:space-between;background:var(--card)}
   .share p{margin:0;font-size:13.5px;color:var(--muted);max-width:44ch}
   .btn{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:11px 18px;
        font-family:inherit;font-size:14px;font-weight:700;cursor:pointer}
@@ -129,6 +146,18 @@
 <body>
 
 <div class="wrap">
+  <a class="banner" id="banner" href="https://www.youtube.com/@kyoboPension" target="_blank" rel="noopener">
+    <img src="banner.png" alt="교보생명 퇴직연금" onerror="document.getElementById('banner').classList.add('no-img');this.remove()">
+    <div class="fb">
+      <span class="mark">KYOBO</span>
+      <span class="bt">
+        <strong>교보생명 퇴직연금</strong>
+        <span>@KyoboPension · 흔들리지 않는 투자를 위한 유용한 콘텐츠</span>
+      </span>
+      <span class="sub">채널 바로가기</span>
+    </div>
+  </a>
+
   <header>
     <div class="label">교보생명 퇴직연금</div>
     <h1>은퇴참견 모아보기</h1>
